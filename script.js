@@ -1,72 +1,79 @@
 const categories = [
-  {
-    id: "sandwich",
-    name: "Sandwich",
+      {
+    id: "पिझ्झा",
+    name: "पिझ्झा",
     items: [
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"}
+      { name: "पनीर पिझ्झा ", price: 170, image: "menu card image/paneer pizza.jpeg"},
+      { name: "कॉर्न पिझ्झा ", price: 160, image: "menu card image/corn pizza.jpg"},
+      { name: "व्हेज पिझ्झा ", price: 150, image: "menu card image/veg pizza.jpg"}
 
     ]
   },
+
   {
-    id: "momo",
-    name: "Momos",
-   items: [
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"}
+    id: "मोमोज ",
+    name: "मोमोज ",
+   items: [ 
+      { name: "स्टीम मोमोज ", price: 65, image: "menu card image/steam momo.jpg"},
+      { name: "फ्राईड मोमोज ", price: 75, image: "menu card image/fried momo.jpg"},
+      { name: "चीझ स्टीम मोमोज ", price: 95, image: "menu card image/cheese steam momo.webp"},
+      { name: "चीझ फ्राईड मोमोज ", price: 105, image: "menu card image/chesse fried momo.webp"},
+      { name: "कुरकुरे मोमोज ", price: 105, image: "menu card image/kurkure momo.jpg"}
 
     ]
   },
-  {
-    id: "wrap",
-    name: "Wraps",
-   items: [
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"}
 
-    ]
-  },
-  {
-    id: "roll",
-    name: "Rolls",
+   {
+    id: "रोल ",
+    name: "रोल ",
   items: [
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"}
+      { name: "व्हेज रोल ", price: 65, image: "menu card image/veg roll.jpg"},
+      { name: "चीझ व्हेज रोल ", price: 75, image: "menu card image/veg cheese roll.jpeg"},
+      { name: "पनीर रोल ", price: 75, image: "menu card image/paneer roll.jpg"},
+      { name: "चीझ पनीर रोल ", price: 85, image: "menu card image/paneer roll.jpg"},
+      { name: "कॉर्न रोल ", price: 85, image: "menu card image/corn roll.jpg"},
+      { name: "चीझ कॉर्न रोल ", price: 105, image: "menu card image/corn roll.jpg"},
+      { name: "चायनीज रोल ", price: 95, image: "menu card image/chinese roll.jpg"},
+      { name: "चीझ चायनीज रोल ", price: 115, image: "img.jpg"},
+      { name: "पनीर टिक्का रोल ", price: 105, image: "menu card image/paneer tikka roll.jpg"},
+      { name: "चीझ पनीर टिक्का रोल ", price: 125, image: "img.jpg"}
 
     ]
   },
+
+  {
+    id: "फ्रेंच फ्राईज ",
+    name: "फ्रेंच फ्राईज ",
+    items: [
+      { name: "सॉल्टेड फ्रेंच फ्राईज ", price: 75, image: "menu card image/salted fries.webp"},
+      { name: "पेरी पेरी  फ्रेंच फ्राईज ", price: 85, image: "menu card image/peri peri fries.webp"}
+
+    ]
+  },
+
+   {
+    id: "टोर्नेडो ",
+    name: "टोर्नेडो ",
+    items: [
+      { name: "प्लेन टोर्नेडो  ", price: 65, image: "menu card image/peri peri tornado.jpeg"},
+      { name: "चीझ टोर्नेडो ", price: 75, image: "menu card image/peri peri tornado.jpeg"},
+      { name: "कुरकुरे टोर्नेडो ", price: 105, image: "menu card image/peri peri tornado.jpeg"}
+
+    ]
+  },
+
+  
+  {
+    id: "छोले भटुरे ",
+    name: "छोले भटुरे ",
+   items: [
+      { name: "छोले भटुरे ", price: 115, image: "menu card image/chhole bhature.jpg"},
+      { name: "छोले कुलचे ", price: 115, image: "menu card image/chhole kulche.jpg"},
+      { name: "छोले पनीर भटुरे ", price: 125, image: "menu card image/chhole bhature.jpg"}
+
+    ]
+  },
+ 
    
   {
     id: "chaat",
