@@ -76,15 +76,128 @@ const categories = [
  
    
   {
-    id: "chaat",
-    name: "Chaats",
+    id: "चायनीज स्नॅक्स ",
+    name: "चायनीज स्नॅक्स ",
+    items: [
+      { name: "मंचुरियन ", price: 85, image: "img.jpg"},
+      { name: "व्हेज लॉलीपॉप ", price: 95, image: "img.jpg"},
+      { name: "पनीर पकोडा ", price: 105, image: "img.jpg"},
+      { name: "चायनीज भेळ ", price: 105, image: "img.jpg"},
+      { name: "सोयाबीन  चिल्ली  ", price: 105, image: "img.jpg"},
+      { name: "पनीर चिल्ली", price: 115, image: "img.jpg"},
+      { name: "मिक्स व्हेज क्रिस्पी ", price: 115, image: "img.jpg"},
+      { name: "कॉकटेल ", price: 125, image: "img.jpg"},
+      { name: "अमेरिकन चॉप्सी ", price: 95, image: "img.jpg"},
+      { name: "चायनीज  चॉप्सी ", price: 95, image: "img.jpg"},
+      { name: "सोया ६५", price: 95, image: "img.jpg"},
+      { name: "क्रिस्पी मांचुरियन थ्रेड ", price: 115, image: "img.jpg"},
+      { name: "क्रिस्पी पनीर  थ्रेड ", price: 125, image: "img.jpg"}
+
+    ]
+  },
+  {
+    id: "नूडल्स ",
+    name: "नूडल्स ",
+    items: [
+      { name: "नूडल्स ", price: 75, image: "img.jpg"},
+      { name: "हक्का नूडल्स ", price: 85, image: "img.jpg"},
+      { name: "शेजवान  नूडल्स ", price: 85, image: "img.jpg"},
+      { name: "मंचुरियन नूडल्स ", price: 95, image: "img.jpg"},
+      { name: "ट्रिपल नूडल्स ", price: 105, image: "img.jpg"},
+      { name: "चिली गार्लिक नूडल्स ", price: 105, image: "img.jpg"},
+      { name: "मॅगी मसाला नूडल्स ", price: 105, image: "img.jpg"},
+      { name: "चाऊमीन नूडल्स ", price: 105, image: "img.jpg"},
+      { name: "हॉंगकॉंग नूडल्स ", price: 105, image: "img.jpg"}
+
+    ]
+  },
+  {
+    id: "फ्राईड राईस ",
+    name: "फ्राईड राईस ",
+    items: [
+      { name: "व्हेज फ्राईड राईस ", price: 85, image: "img.jpg"},
+      { name: "मसाला राईस ", price: 85, image: "img.jpg"},
+      { name: "लेमन राईस ", price: 85, image: "img.jpg"},
+      { name: "मंचुरीयन  राईस ", price: 95, image: "img.jpg"},
+      { name: "पनीर फ्राईड राईस ", price: 105, image: "img.jpg"},
+      { name: "ट्रिपल राईस ", price: 105, image: "img.jpg"},
+      { name: "सिंगापूर राईस ", price: 105, image: "img.jpg"},
+      { name: "शेजवान ट्रिपल राईस ", price: 115, image: "img.jpg"},
+      { name: "पनीर व्हेज पुलाव ", price: 125, image: "img.jpg"},
+      { name: "मटर पनीर राईस ", price: 125, image: "img.jpg"},
+      { name: "पनीर बुर्जी जिरा राईस ", price: 155, image: "img.jpg"}
+
+    ]
+  },
+
+   {
+    id: "सँडविच ",
+    name: "सँडविच  ",
+    items: [
+      { name: "व्हेज सँडविच ", price: 45, image: "img.jpg"},
+      { name: "व्हेज चीज सँडविच ", price: 65, image: "img.jpg"},
+      { name: "व्हेज डबल चीज सँडविच ", price: 85, image: "img.jpg"},
+      { name: "जम्बो व्हेज सँडविच ", price: 65, image: "img.jpg"},
+      { name: "जम्बो व्हेज चीज सँडविच ", price: 85, image: "img.jpg"},
+      { name: "जम्बो व्हेज डबल चीज सँडविच ", price: 105, image: "img.jpg"},
+      { name: "कॉर्न सँडविच ", price: 65, image: "img.jpg"},
+      { name: "चीज कॉर्न सँडविच ", price: 85, image: "img.jpg"},
+      { name: "डबल चीज कॉर्न सँडविच ", price: 105, image: "img.jpg"},
+      { name: "आलू सँडविच ", price: 55, image: "img.jpg"},
+      { name: "आलू चीज सँडविच ", price: 75, image: "img.jpg"},
+      { name: "आलू डबल चीज सँडविच ", price: 95, image: "img.jpg"},
+      { name: "पनीर सँडविच ", price: 85, image: "img.jpg"},
+      { name: "चीज पनीर सँडविच ", price: 105, image: "img.jpg"},
+      { name: "डबल चीज पनीर सँडविच ", price: 125, image: "img.jpg"},
+      { name: "चॉकलेट सँडविच ", price: 75, image: "img.jpg"},
+      { name: "चॉकलेट बॉम्ब सँडविच ", price: 105, image: "img.jpg"}
+
+    ]
+  },
+
+  {
+    id: "चीझ बर्स्ट सँडविच  ",
+    name: "चीझ बर्स्ट सँडविच   ",
+    items: [
+      { name: "चीझ बर्स्ट व्हेज सँडविच ", price: 105, image: "img.jpg"},
+      { name: "चीझ बर्स्ट कॉर्न सँडविच ", price: 105, image: "img.jpg"},
+      { name: "चीझ बर्स्ट आलू सँडविच ", price: 105, image: "img.jpg"},
+      { name: "चीझ बर्स्ट पनीर सँडविच ", price: 125, image: "img.jpg"}
+
+    ]
+  },
+
+  {
+    id: "नाचोज ",
+    name: "नाचोज  ",
+    items: [
+      { name: "चटपटा मसाला नाचोज ", price: 55, image: "img.jpg"},
+      { name: "पेरी पेरी नाचोज", price: 65, image: "img.jpg"},
+      { name: "चीज नाचोज ", price: 75, image: "img.jpg"},
+      { name: "चीज लोडेड नाचोज ", price: 105, image: "img.jpg"}
+
+    ]
+  },
+
+  {
+    id: "मॅगी  ",
+    name: "मॅगी  ",
+    items: [
+      { name: "मसाला मॅगी", price: 55, image: "img.jpg"},
+      { name: "शेजवान मॅगी ", price: 55, image: "img.jpg"},
+      { name: "चीज कॉर्न मॅगी ", price: 65, image: "img.jpg"},
+      { name: "पनीर मॅगी ", price: 65, image: "img.jpg"},
+      { name: "चीज पनीर मॅगी ", price: 85, image: "img.jpg"}
+
+    ]
+  },
+
+  {
+    id: "पाव सेक्शन  ",
+    name: "पाव सेक्शन   ",
     items: [
       { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
       { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
       { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
       { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
       { name: "Veg Sandwich", price: 45, image: "img.jpg"},
@@ -92,16 +205,15 @@ const categories = [
 
     ]
   },
+
   {
-    id: "paratha",
-    name: "Parathas",
+    id: "चाट भंडार   ",
+    name: "चाट भंडार   ",
     items: [
       { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
       { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
       { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
       { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
       { name: "Veg Sandwich", price: 45, image: "img.jpg"},
@@ -109,16 +221,14 @@ const categories = [
 
     ]
   },
+
   {
-    id: "shake",
-    name: "Shakes",
+    id: "साऊथ इंडियन   ",
+    name: "साऊथ इंडियन    ",
     items: [
       { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
       { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
-      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
-      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
       { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
       { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
       { name: "Veg Sandwich", price: 45, image: "img.jpg"},
@@ -126,10 +236,58 @@ const categories = [
 
     ]
   },
+
   {
-    id: "beverage",
-    name: "Beverages",
+    id: "आईस्क्रीम   ",
+    name: "आईस्क्रीम    ",
+    items: [
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
+      { name: "Veg Sandwich", price: 45, image: "img.jpg"}
+
+    ]
+  },
+
+  {
+    id: "शेक   ",
+    name: "शेक     ",
+    items: [
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
+      { name: "Veg Sandwich", price: 45, image: "img.jpg"},
+      { name: "Veg Sandwich", price: 45, image: "img.jpg"}
+
+    ]
+  },
+
+
+  
+  {
+    id: "जेवणाचा मेनू ",
+    name: "जेवणाचा मेनू ",
    items: [
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
+      { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
       { name: "Paneer Sandwich", price: 50, image: "img.jpg"},
       { name: "Cheese Sandwich", price: 55, image: "img.jpg"},
       { name: "Veg Sandwich", price: 45, image: "img.jpg"},
