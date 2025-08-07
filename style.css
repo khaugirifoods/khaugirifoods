@@ -7,6 +7,18 @@ body {
 .navbar img {
   object-fit: contain;
 }
+.restaurant-name {
+  font-weight: 700; /* Bold */
+  font-size: 1.25rem;
+}
+.restaurant-tagline {
+  font-weight: 500; /* Medium */
+  font-size: 0.85rem;
+}
+.restaurant-contact {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
 .food-card {
   min-width: 160px;
   background-color: #fff;
