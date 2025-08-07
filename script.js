@@ -359,7 +359,7 @@ function updateTotal() {
           const itemId = cat.id + i;
           if (id === itemId) {
             const amount = item.price * cart[id];
-            cartList += `<p>${item.name} x ${cart[id]} = ₹${amount}</p>`;
+            cartList += `<p>${item.name} ${item.price}  x ${cart[id]} = ₹${amount}</p>`;
             total += amount;
           }
         });
