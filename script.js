@@ -390,7 +390,7 @@ document.getElementById("whatsappBtn").addEventListener("click", function (e) {
           const itemId = cat.id + i;
           if (id === itemId) {
             const amount = item.price * cart[id];
-            message += `• ${item.name} x ${cart[id]} = ₹${amount}\n`;
+            message += `• ${item.name} ${item.price} x ${cart[id]} = ₹${amount}\n`;
             total += amount;
             hasItems = true;
           }
@@ -404,7 +404,7 @@ document.getElementById("whatsappBtn").addEventListener("click", function (e) {
     return;
   }
 
-  message += `\n💰 *Total: ₹${total}*\n\n📦 Please confirm your order.`;
+  message += `\n💰 *Total: ₹${total}*\n\n📦 Thanks for ordering from KGF. Keep ordering. `;
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 });
