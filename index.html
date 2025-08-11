@@ -1,58 +1,116 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Khaugiri Foods</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
   <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body style="background-image: url('background.jpg'); background-size: cover; background-attachment: fixed;">
 
+
+
 <!-- Navbar -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-success px-3 py-2 fixed-top">
+
   <div class="d-flex align-items-center">
+
     <img src="KGF_Logo.png" alt="Khaugiri Logo" width="60" height="60" class="me-2" />
+
     <div class="d-flex flex-column">
+
       <span class="restaurant-name text-white">KhauGiri Foods (KGF) </span>
+
       <span class="restaurant-tagline text-white">Pure Veg & Fast Food Restaurant</span>
+
       <span class="restaurant-contact text-white">9403201043, 7028493881</span>
+
     </div>
+
   </div>
+
   <button class="btn btn-light ms-auto" id="viewCartBtn">View & Place Order</button>
+
 </nav>
 
+
+
 <!-- Menu -->
+
 <div class="container my-4" id="menuContainer"></div>
 
+
+
 <!-- Cart Modal -->
+
 <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+
   <div class="modal-dialog modal-dialog-scrollable">
+
     <div class="modal-content p-3 rounded shadow">
+
       <div class="modal-header">
+
         <h5 class="modal-title">Review & Place Order</h5>
+
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
       </div>
+
       <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+
         <div id="cartItems"></div>
+
         <p id="totalAmount" class="fw-bold fs-5">Total: ₹0</p>
+
         <p class="text-center"><strong>Scan QR to Pay</strong></p>
+
         <div class="qr-placeholder text-center py-4">
+
           <img src="upi.jpeg" alt="UPI QR Code" style="max-width: 200px; height: auto;" />
+
         </div>
+
         <p class="text-center mt-3"><strong>UPI Number:</strong> 9403201043</p>
-        <p class="text-muted text-center">ऑर्डर प्लेस केल्यानंतर कृपया ऑनलाईन पेमंट रिसिप्ट शेअर करा. </p>
-        <p class="text-muted text-center">किंवा कॅश ओन डिलिव्हरी असल्यास सुट्टे पैसे द्या. धन्यवाद </p>
+
+        <p class="text-muted text-center">ऑर्डर प्लेस केल्यानंतर कृपया ऑनलाईन पेमेन्ट रिसिप्ट शेअर करा. </p>
+
+        <p class="text-muted text-center">किंवा कॅश ऑन डेलीव्हरी असल्यास सुट्टे पैसे द्या. धन्यवाद </p>
+
       </div>
+
       <div class="modal-footer">
+
         <a href="#" id="whatsappBtn" target="_blank" class="btn btn-success w-100">Send Order via WhatsApp</a>
+
       </div>
+
     </div>
+
   </div>
+
 </div>
 
+
+
 <!-- Scripts -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <script src="script.js"></script>
+
 </body>
+
 </html>
+
