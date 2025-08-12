@@ -280,7 +280,7 @@ const categories = [
       { name: "शेव भाजी ", price: 125, image: "menu card image/shev bhaji.jpg"},
       { name: "आलू मटर भाजी ", price: 105, image: "menu card image/aalu matar bhaji.jpg"},
       { name: "दाल फ्राय", price: 125, image: "menu card image/dal fry.jpeg"},
-      { name: "दाल तडका ", price: 130, image: "menu card image/dal tadaka.jpeg"},
+      { name: "दाल तडका ", price: 135, image: "menu card image/dal tadaka.jpeg"},
       { name: "फुलका ", price: 10, image: "menu card image/fhulka.jpeg"},
       { name: "पुरी", price: 20, image: "menu card image/puri.jpeg"},
       { name: "श्रीखंड ", price: 40, image: "menu card image/shikhand.jpeg"},
@@ -293,8 +293,8 @@ const categories = [
       { name: "नामदेव राईस", price: 165, image: "menu card image/namdev rice.jpeg"},
       { name: "संपूर्ण पनीर थाळी", price: 245, image: "menu card image/thali.webp"},
       { name: "संपूर्ण व्हेज थाळी", price: 205, image: "menu card image/thali.webp"},
-      { name: "मिनी व्हेज थाळी", price: 130, image: "menu card image/thali.webp"},
-      { name: "श्रीखंड पुरी ", price: 80, image: "menu card image/shrikhand puri.jpg"}
+      { name: "मिनी व्हेज थाळी", price: 135, image: "menu card image/thali.webp"},
+      { name: "श्रीखंड पुरी ", price: 85, image: "menu card image/shrikhand puri.jpg"}
 
     ]
   }
