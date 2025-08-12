@@ -262,7 +262,7 @@ const categories = [
       { name: "व्हॅनिला शेक ", price: 65, image: "menu card image/vaniila shake.jpg"},
       { name: "ओरियो फ्रिक शेक", price: 85, image: "menu card image/freak shake.jpg"},
       { name: "ओरियो फ्रिक शेक आईस्क्रीम ", price: 105, image: "menu card image/oreo freak shake.jpg"},
-      { name: "ओरियो फ्रिक शेक चोको क्रॅश", price: 45, image: "menu card image/oreo freak shake.jpg"},
+      { name: "ओरियो फ्रिक शेक चोको क्रॅश", price: 105, image: "menu card image/oreo freak shake.jpg"},
       { name: "ओरियो फ्रिक शेक KGF SPECIAL", price: 125, image: "menu card image/kgf special.jpeg"}
 
     ]
