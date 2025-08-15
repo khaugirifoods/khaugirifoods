@@ -1,4 +1,22 @@
 const categories = [
+
+    {
+    id: "पनीर & व्हेज स्पेशल भाजी  ",
+    name: "पनीर & व्हेज स्पेशल भाजी  ",
+   items: [
+      { name: "पनीर टिक्का मसाला ", price: 175, image: "menu card image/paneer tikka masala.jpeg"},
+      { name: "पनीर बटर मसाला ", price: 175, image: "menu card image/paneer butter masala.jpeg"},
+      { name: "पनीर वऱ्हाडी", price: 155, image: "menu card image/paeer varhadu.jpeg"},
+      { name: "पनीर भुर्जी ", price: 225, image: "menu card image/PaneerBharji.png"},
+      { name: "शेव भाजी ", price: 125, image: "menu card image/shev bhaji.jpg"},
+      { name: "शेव टमाटर  ", price: 145, image: "menu card image/ShevTamatar.png"},
+      { name: "आलू मटर भाजी ", price: 105, image: "menu card image/aalu matar bhaji.jpg"},
+      { name: "दाल फ्राय", price: 125, image: "menu card image/dal fry.jpeg"},
+      { name: "दाल तडका ", price: 135, image: "menu card image/dal tadaka.jpeg"}
+
+    ]
+  },
+
       {
     id: "पिझ्झा",
     name: "पिझ्झा",
@@ -274,6 +292,15 @@ const categories = [
     id: "जेवणाचा मेनू ",
     name: "जेवणाचा मेनू ",
    items: [
+      { name: "संपूर्ण पनीर थाळी", price: 245, image: "menu card image/thali.webp"},
+      { name: "संपूर्ण व्हेज थाळी", price: 205, image: "menu card image/thali.webp"},
+      { name: "मिनी व्हेज थाळी", price: 135, image: "menu card image/thali.webp"},
+      { name: "श्रीखंड पुरी ", price: 85, image: "menu card image/shrikhand puri.jpg"},
+      { name: "दाल खिचडी", price: 155, image: "menu card image/dal khichadi.webp"},
+      { name: "नामदेव राईस", price: 165, image: "menu card image/namdev rice.jpeg"},
+      { name: "पनीर व्हेज पुलाव ", price: 125, image: "menu card image/veg pulav.jpeg"},
+      { name: "प्लेन राईस ", price: 85, image: "menu card image/steam rice.jpeg"},
+      { name: "जीरा राईस", price: 105, image: "menu card image/steam rice.jpeg"},
       { name: "पनीर टिक्का मसाला ", price: 175, image: "menu card image/paneer tikka masala.jpeg"},
       { name: "पनीर बटर मसाला ", price: 175, image: "menu card image/paneer butter masala.jpeg"},
       { name: "पनीर वऱ्हाडी", price: 155, image: "menu card image/paeer varhadu.jpeg"},
@@ -285,16 +312,7 @@ const categories = [
       { name: "पुरी", price: 20, image: "menu card image/puri.jpeg"},
       { name: "श्रीखंड ", price: 40, image: "menu card image/shikhand.jpeg"},
       { name: "मसाला पापड", price: 30, image: "menu card image/masala papad.jpeg"},
-      { name: "रोस्टेड पापड ", price: 20, image: "menu card image/roasted papad.jpeg"},
-      { name: "प्लेन राईस ", price: 85, image: "menu card image/steam rice.jpeg"},
-      { name: "जीरा राईस", price: 105, image: "menu card image/steam rice.jpeg"},
-      { name: "पनीर व्हेज पुलाव ", price: 125, image: "menu card image/veg pulav.jpeg"},
-      { name: "दाल खिचडी", price: 155, image: "menu card image/dal khichadi.webp"},
-      { name: "नामदेव राईस", price: 165, image: "menu card image/namdev rice.jpeg"},
-      { name: "संपूर्ण पनीर थाळी", price: 245, image: "menu card image/thali.webp"},
-      { name: "संपूर्ण व्हेज थाळी", price: 205, image: "menu card image/thali.webp"},
-      { name: "मिनी व्हेज थाळी", price: 135, image: "menu card image/thali.webp"},
-      { name: "श्रीखंड पुरी ", price: 85, image: "menu card image/shrikhand puri.jpg"}
+      { name: "रोस्टेड पापड ", price: 20, image: "menu card image/roasted papad.jpeg"}
 
     ]
   }
