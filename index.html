@@ -21,30 +21,43 @@
 
 
 <!-- Navbar -->
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-success px-3 py-2 fixed-top">
-
+<nav class="navbar navbar-expand-lg px-3 py-2 fixed-top custom-navbar">
   <div class="d-flex align-items-center">
+    <!-- Logo -->
+    <img src="KGF_Logo.png" alt="Khaugiri Logo" class="logo-img me-3" />
 
-    <img src="KGF_Logo.png" alt="Khaugiri Logo" width="60" height="60" class="me-2" />
-
+    <!-- Text Section -->
     <div class="d-flex flex-column">
-
-      <span class="restaurant-name text-white">KhauGiri Foods (KGF) </span>
-
-      <span class="restaurant-tagline text-white">Pure Veg & Fast Food Restaurant</span>
-
-      <span class="restaurant-contact text-white">Free Home Delivery - 9403201043, 7028493881</span>
-
+      <span class="restaurant-name">KhauGiri Foods (KGF)</span>
+      <span class="restaurant-tagline">Pure Veg & Fast Food Restaurant</span>
+      <span class="restaurant-contact">
+        📞 9403201043, 7028493881
+      </span>
     </div>
-
   </div>
 
-  <button class="btn btn-light ms-auto" id="viewCartBtn">View & Place Order</button>
-
+  <!-- Order Button -->
+  <button class="btn order-btn ms-auto" id="viewCartBtn">
+    <span style="filter: grayscale(100%) brightness(0);">🍴</span> View & Place Order
+  </button>
 </nav>
 
 
+
+<!-- Offer Carousel -->
+<div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner text-center offer-carousel">
+    <div class="carousel-item active p-2">
+      <h5 class="m-0">🔥 COLD DRINK FREE on ₹300+ Online Orders!</h5>
+    </div>
+    <div class="carousel-item p-2">
+      <h5 class="m-0">🚚 Free Home Delivery on orders ₹100+ Only</h5>
+    </div>
+    <div class="carousel-item p-2">
+      <h5 class="m-0">🍔 KGF Ganeshotsav Lucky Draw Started...</h5>
+    </div>
+  </div>
+</div>
 
 <!-- Menu -->
 
