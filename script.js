@@ -217,6 +217,7 @@ const categories = [
       { name: "मिसळ पाव", price: 75, image: "menu card image/misal pav.webp"},
       { name: "पाव भाजी", price: 65, image: "menu card image/pav bhaji.jpg"},
       { name: "चीज पाव भाजी", price: 85, image: "menu card image/pav bhaji dosa.jpeg"},
+      { name: "एक्सट्रा पाव 2", price: 15, image: "menu card image/PavPair.png"},
       { name: "चीज पाव ", price: 55, image: "menu card image/cheese pav.jpg"},
       { name: "दाबेली", price: 55, image: "menu card image/dabeli.webp"},
       { name: "चीज दाबेली", price: 75, image: "menu card image/dabeli.webp"}
