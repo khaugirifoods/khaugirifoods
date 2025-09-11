@@ -74,7 +74,9 @@ const categories = [
     name: "टोर्नेडो ",
     items: [
       { name: "प्लेन टोर्नेडो  ", price: 65, image: "menu card image/peri peri tornado.jpeg"},
+      { name: "पेरी पेरी टोर्नेडो ", price: 75, image: "menu card image/peri peri tornado.jpeg"},
       { name: "चीझ टोर्नेडो ", price: 75, image: "menu card image/peri peri tornado.jpeg"},
+      { name: "चीझ पेरी पेरी टोर्नेडो ", price: 85, image: "menu card image/peri peri tornado.jpeg"},
       { name: "कुरकुरे टोर्नेडो ", price: 105, image: "menu card image/peri peri tornado.jpeg"}
 
     ]
