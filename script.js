@@ -89,7 +89,8 @@ const categories = [
    items: [
       { name: "छोले भटुरे ", price: 115, image: "menu card image/chhole bhature.jpg"},
       { name: "छोले कुलचे ", price: 115, image: "menu card image/chhole kulche.jpg"},
-      { name: "छोले पनीर भटुरे ", price: 125, image: "menu card image/chhole bhature.jpg"}
+      { name: "छोले पनीर भटुरे ", price: 125, image: "menu card image/chhole bhature.jpg"},
+      { name: "छोले पनीर कुलचे ", price: 125, image: "menu card image/chhole kulche.jpg"}
 
     ]
   },
@@ -220,10 +221,7 @@ const categories = [
       { name: "पाव भाजी", price: 65, image: "menu card image/pav bhaji.jpg"},
       { name: "चीज पाव भाजी", price: 85, image: "menu card image/pav bhaji dosa.jpeg"},
       { name: "एक्सट्रा पाव 2", price: 15, image: "menu card image/PavPair.png"},
-      { name: "चीज पाव ", price: 55, image: "menu card image/cheese pav.jpg"},
-      { name: "दाबेली", price: 55, image: "menu card image/dabeli.webp"},
-      { name: "चीज दाबेली", price: 75, image: "menu card image/dabeli.webp"}
-
+      { name: "चीज पाव ", price: 55, image: "menu card image/cheese pav.jpg"}
     ]
   },
 
@@ -285,6 +283,15 @@ const categories = [
       { name: "ओरियो फ्रिक शेक आईस्क्रीम ", price: 105, image: "menu card image/oreo freak shake.jpg"},
       { name: "ओरियो फ्रिक शेक चोको क्रॅश", price: 105, image: "menu card image/oreo freak shake.jpg"},
       { name: "ओरियो फ्रिक शेक KGF SPECIAL", price: 125, image: "menu card image/kgf special.jpeg"}
+
+    ]
+  },
+
+ {
+    id: "स्वीट ",
+    name: "स्वीट ",
+    items: [
+      { name: "श्रीखंड ", price: 40, image: "menu card image/shikhand.jpeg"}
 
     ]
   },
