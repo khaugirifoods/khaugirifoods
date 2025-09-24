@@ -435,3 +435,46 @@ document.getElementById("whatsappBtn").addEventListener("click", function (e) {
 });
 
 window.onload = renderMenu;
+
+// Attach search input listener after menu has been rendered
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', filterMenu);
+
+function filterMenu() {
+  const query = searchInput.value.trim().toLowerCase();
+  const container = document.getElementById("menuContainer");
+
+  // If search is empty, restore full menu:
+  if (!query) {
+    renderMenu();
+    return;
+  }
+
+  // Build filtered item cards:
+  let filteredHTML = '';
+  categories.forEach(cat => {
+    cat.items.forEach((item, i) => {
+      if (item.name.toLowerCase().includes(query)) {
+        const itemId = cat.id + i;
+        filteredHTML += `
+          <div class="food-card me-3 p-2 border rounded text-center" style="width: 150px;">
+            <img src="${item.image}" alt="${item.name}" style="width:100%; height:100px; object-fit:cover;" />
+            <p><strong>${item.name}</strong><br>₹${item.price}</p>
+            <div class="quantity">
+              <button onclick="decrease('${itemId}')">-</button>
+              <span id="${itemId}">${cart[itemId] || 0}</span>
+              <button onclick="increase('${itemId}')">+</button>
+            </div>
+          </div>`;
+      }
+    });
+  });
+
+  // Replace menu with filtered results:
+  if (filteredHTML) {
+    container.innerHTML = `<div class="d-flex flex-wrap">${filteredHTML}</div>`;
+  } else {
+    container.innerHTML = "<p>No items match your search.</p>";
+  }
+}
+
