@@ -166,3 +166,9 @@ body {
     background: linear-gradient(90deg, #ffb700, #ff8800);
     transform: scale(1.05);
   }
+
+  #searchInput {
+  width: 100%;       /* full width */
+  margin-bottom: 1rem;
+  padding: 0.5rem;   /* optional padding */
+}
