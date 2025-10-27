@@ -1,17 +1,5 @@
 const categories = [
-
-          {
-    id: "ऑफर पिझ्झा",
-    name: "ऑफर पिझ्झा",
-    items: [
-      { name: "पनीर पिझ्झा ", price: 110, image: "menu card image/paneer pizza.jpeg"},
-      { name: "कॉर्न पिझ्झा ", price: 110, image: "menu card image/corn pizza.jpg"},
-      { name: "व्हेज पिझ्झा ", price: 110, image: "menu card image/veg pizza.jpg"}
-
-    ]
-  },
-
-    {
+   {
     id: "पनीर & व्हेज स्पेशल भाजी  ",
     name: "पनीर & व्हेज स्पेशल भाजी  ",
    items: [
