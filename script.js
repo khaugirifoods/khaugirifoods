@@ -1,4 +1,16 @@
 const categories = [
+
+   {
+    id: "फ्रोझन प्रॉडक्ट्स  ",
+    name: "फ्रोझन प्रॉडक्ट्स  ",
+   items: [
+      { name: "स्वीट कॉर्न (मका)-250 ग्रॅम", price: 30, image: "menu card image/Frozen_Sweet_Corn.png"},
+      { name: "ग्रीन पीस (वाटाणा)-250 ग्रॅम", price: 40, image: "menu card image/Frozen_Green_Peas.png"},
+      { name: "फ्रेंच फ्राईज", price: 50, image: "menu card image/Frozen_French_Fries.png"}
+
+    ]
+  },
+   
    {
     id: "पनीर & व्हेज स्पेशल भाजी  ",
     name: "पनीर & व्हेज स्पेशल भाजी  ",
