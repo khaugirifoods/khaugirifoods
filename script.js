@@ -32,9 +32,15 @@ const categories = [
     id: "पिझ्झा",
     name: "पिझ्झा",
     items: [
-      { name: "पनीर पिझ्झा ", price: 170, image: "menu card image/paneer pizza.jpeg"},
-      { name: "कॉर्न पिझ्झा ", price: 160, image: "menu card image/corn pizza.jpg"},
-      { name: "व्हेज पिझ्झा ", price: 150, image: "menu card image/veg pizza.jpg"}
+      { name: "ऑफर पनीर पिझ्झा ", price: 120, image: "menu card image/paneer pizza.jpeg"},
+      { name: "ऑफर कॉर्न पिझ्झा ", price: 110, image: "menu card image/corn pizza.jpg"},
+      { name: "ऑफर व्हेज पिझ्झा ", price: 110, image: "menu card image/veg pizza.jpg"},
+      { name: "रेगुलर पनीर पिझ्झा ", price: 170, image: "menu card image/paneer pizza.jpeg"},
+      { name: "रेगुलर कॉर्न पिझ्झा ", price: 160, image: "menu card image/corn pizza.jpg"},
+      { name: "रेगुलर व्हेज पिझ्झा ", price: 150, image: "menu card image/veg pizza.jpg"},
+      { name: "एक्सट्रा चिझ पनीर पिझ्झा ", price: 210, image: "menu card image/paneer pizza.jpeg"},
+      { name: "एक्सट्रा चिझ कॉर्न पिझ्झा ", price: 200, image: "menu card image/corn pizza.jpg"},
+      { name: "एक्सट्रा चिझ व्हेज पिझ्झा ", price: 190, image: "menu card image/veg pizza.jpg"}
 
     ]
   },
