@@ -309,7 +309,7 @@ const categories = [
     name: "स्वीट & सुप ",
     items: [
       { name: "श्रीखंड ", price: 40, image: "menu card image/shikhand.jpeg"},
-       { name: "मंचाव सुप ", price: 95, image: "menu card image/Manchao_Soup.png"}
+       { name: "मंचाव सुप ", price: 90, image: "menu card image/Manchao_Soup.png"}
 
     ]
   },
@@ -318,7 +318,7 @@ const categories = [
     id: "इतर ",
     name: "इतर ",
     items: [
-      { name: "हॉट कॉफी ", price: 25, image: "menu card image/Hot_Coffee.png"},
+      { name: "हॉट कॉफी ", price: 20, image: "menu card image/Hot_Coffee.png"},
       { name: "पाणी बॉटल ", price: 20, image: "menu card image/Water_Bottle.png"}
 
     ]
