@@ -1,4 +1,38 @@
 const categories = [
+     {
+    id: "आईस्क्रीम कुल्फी  ",
+    name: "आईस्क्रीम कुल्फी    ",
+    items: [
+      { name: "कुल्फी", price: 12, image: "menu card image/Kulfi.png"},
+      { name: "जीरा सोडा", price: 15, image: "menu card image/Jeera_Soda.png"},
+      { name: "स्प्राईट ", price: 25, image: "menu card image/Sprite.png"},
+      { name: "बटरस्कॉच", price: 30, image: "menu card image/butter ice.jpg"},
+      { name: "चॉकलेट ", price: 30, image: "menu card image/chocolate ice.webp"},
+      { name: "व्हॅनिला ", price: 30, image: "menu card image/vanilla ice.jpg"}
+
+    ]
+  },
+
+  {
+    id: "शेक   ",
+    name: "शेक     ",
+    items: [
+      { name: "केसर-पिस्ता शेक", price: 65, image: "menu card image/kesar pista shake.webp"},
+      { name: "पायनॅपल शेक ", price: 65, image: "menu card image/pineapple shake.jpg"},
+      { name: "कोल्ड कॉफी ", price: 45, image: "menu card image/cold coffee.jpeg"},
+      { name: "कोल्ड कॉफी आईस्क्रीम", price: 65, image: "menu card image/cold coffee ice.jpeg"},
+      { name: "कोल्ड कॉफी चोको क्रॅश", price: 65, image: "menu card image/cold coffee choco.jpeg"},
+      { name: "कोल्ड कॉफी आईस्क्रीम + क्रॅश", price: 75, image: "menu card image/cold coffee ice choco.jpeg"},
+      { name: "चॉकलेट शेक ", price: 65, image: "menu card image/choco shake.jpeg"},
+      { name: "चॉकलेट शेक चोको क्रॅश ", price: 85, image: "menu card image/choco shake.jpeg"},
+      { name: "व्हॅनिला शेक ", price: 65, image: "menu card image/vaniila shake.jpg"},
+      { name: "ओरियो फ्रिक शेक", price: 85, image: "menu card image/freak shake.jpg"},
+      { name: "ओरियो फ्रिक शेक आईस्क्रीम ", price: 105, image: "menu card image/oreo freak shake.jpg"},
+      { name: "ओरियो फ्रिक शेक चोको क्रॅश", price: 105, image: "menu card image/oreo freak shake.jpg"},
+      { name: "ओरियो फ्रिक शेक KGF SPECIAL", price: 125, image: "menu card image/kgf special.jpeg"}
+
+    ]
+  },
 
    {
     id: "फ्रोझन प्रॉडक्ट्स  ",
@@ -265,38 +299,6 @@ const categories = [
       { name: "ओनियन उत्तपा", price: 55, image: "menu card image/onion utthapa.jpeg"},
       { name: "टोमॅटो ओनियन उत्तपा", price: 65, image: "menu card image/mix utthapa.jpeg"},
       { name: "आप्पे ", price: 55, image: "menu card image/aape.jpg"}
-
-    ]
-  },
-
-  {
-    id: "आईस्क्रीम   ",
-    name: "आईस्क्रीम    ",
-    items: [
-      { name: "बटरस्कॉच", price: 30, image: "menu card image/butter ice.jpg"},
-      { name: "चॉकलेट ", price: 30, image: "menu card image/chocolate ice.webp"},
-      { name: "व्हॅनिला ", price: 30, image: "menu card image/vanilla ice.jpg"}
-
-    ]
-  },
-
-  {
-    id: "शेक   ",
-    name: "शेक     ",
-    items: [
-      { name: "केसर-पिस्ता शेक", price: 65, image: "menu card image/kesar pista shake.webp"},
-      { name: "पायनॅपल शेक ", price: 65, image: "menu card image/pineapple shake.jpg"},
-      { name: "कोल्ड कॉफी ", price: 45, image: "menu card image/cold coffee.jpeg"},
-      { name: "कोल्ड कॉफी आईस्क्रीम", price: 65, image: "menu card image/cold coffee ice.jpeg"},
-      { name: "कोल्ड कॉफी चोको क्रॅश", price: 65, image: "menu card image/cold coffee choco.jpeg"},
-      { name: "कोल्ड कॉफी आईस्क्रीम + क्रॅश", price: 75, image: "menu card image/cold coffee ice choco.jpeg"},
-      { name: "चॉकलेट शेक ", price: 65, image: "menu card image/choco shake.jpeg"},
-      { name: "चॉकलेट शेक चोको क्रॅश ", price: 85, image: "menu card image/choco shake.jpeg"},
-      { name: "व्हॅनिला शेक ", price: 65, image: "menu card image/vaniila shake.jpg"},
-      { name: "ओरियो फ्रिक शेक", price: 85, image: "menu card image/freak shake.jpg"},
-      { name: "ओरियो फ्रिक शेक आईस्क्रीम ", price: 105, image: "menu card image/oreo freak shake.jpg"},
-      { name: "ओरियो फ्रिक शेक चोको क्रॅश", price: 105, image: "menu card image/oreo freak shake.jpg"},
-      { name: "ओरियो फ्रिक शेक KGF SPECIAL", price: 125, image: "menu card image/kgf special.jpeg"}
 
     ]
   },
