@@ -49,15 +49,15 @@ const categories = [
     id: "पनीर & व्हेज स्पेशल भाजी  ",
     name: "पनीर & व्हेज स्पेशल भाजी  ",
    items: [
-      { name: "पनीर टिक्का मसाला ", price: 175, image: "menu card image/paneer tikka masala.jpeg"},
-      { name: "पनीर बटर मसाला ", price: 175, image: "menu card image/paneer butter masala.jpeg"},
-      { name: "पनीर वऱ्हाडी", price: 155, image: "menu card image/paeer varhadu.jpeg"},
-      { name: "पनीर भुर्जी करी", price: 225, image: "menu card image/PaneerBharji.png"},
+      { name: "पनीर टिक्का मसाला ", price: 125, image: "menu card image/paneer tikka masala.jpeg"},
+      { name: "पनीर बटर मसाला ", price: 125, image: "menu card image/paneer butter masala.jpeg"},
+      { name: "पनीर वऱ्हाडी", price: 125, image: "menu card image/paeer varhadu.jpeg"},
+      { name: "पनीर भुर्जी करी", price: 125, image: "menu card image/PaneerBharji.png"},
       { name: "शेव भाजी ", price: 125, image: "menu card image/shev bhaji.jpg"},
-      { name: "शेव टमाटर  ", price: 145, image: "menu card image/ShevTamatar.png"},
-      { name: "आलू मटर भाजी ", price: 105, image: "menu card image/aalu matar bhaji.jpg"},
+      { name: "शेव टमाटर  ", price: 125, image: "menu card image/ShevTamatar.png"},
+      { name: "आलू मटर भाजी ", price: 125, image: "menu card image/aalu matar bhaji.jpg"},
       { name: "दाल फ्राय", price: 125, image: "menu card image/dal fry.jpeg"},
-      { name: "दाल तडका ", price: 135, image: "menu card image/dal tadaka.jpeg"}
+      { name: "दाल तडका ", price: 125, image: "menu card image/dal tadaka.jpeg"}
 
     ]
   },
