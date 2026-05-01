@@ -5,7 +5,6 @@ const categories = [
     items: [
       { name: "कुल्फी", price: 12, image: "menu card image/Kulfi.png"},
       { name: "जीरा सोडा", price: 15, image: "menu card image/Jeera_Soda.png"},
-      { name: "स्प्राईट ", price: 25, image: "menu card image/Sprite.png"},
       { name: "बटरस्कॉच", price: 30, image: "menu card image/butter ice.jpg"},
       { name: "चॉकलेट ", price: 30, image: "menu card image/chocolate ice.webp"},
       { name: "व्हॅनिला ", price: 30, image: "menu card image/vanilla ice.jpg"}
@@ -38,8 +37,8 @@ const categories = [
     id: "फ्रोझन प्रॉडक्ट्स  ",
     name: "फ्रोझन प्रॉडक्ट्स  ",
    items: [
-      { name: "स्वीट कॉर्न (मका)-250 ग्रॅम", price: 30, image: "menu card image/Frozen_Sweet_Corn.png"},
-      { name: "ग्रीन पीस (वाटाणा)-250 ग्रॅम", price: 40, image: "menu card image/Frozen_Green_Peas.png"},
+      { name: "स्वीट कॉर्न (मका)-250 ग्रॅम", price: 50, image: "menu card image/Frozen_Sweet_Corn.png"},
+      { name: "ग्रीन पीस (वाटाणा)-250 ग्रॅम", price: 50, image: "menu card image/Frozen_Green_Peas.png"},
       { name: "फ्रेंच फ्राईज-200 ग्रॅम", price: 50, image: "menu card image/Frozen_French_Fries.png"}
 
     ]
@@ -66,12 +65,18 @@ const categories = [
     id: "पिझ्झा",
     name: "पिझ्झा",
     items: [
-      { name: "पनीर पिझ्झा ", price: 170, image: "menu card image/paneer pizza.jpeg"},
-      { name: "कॉर्न पिझ्झा ", price: 160, image: "menu card image/corn pizza.jpg"},
-      { name: "व्हेज पिझ्झा ", price: 150, image: "menu card image/veg pizza.jpg"},
+      { name: "क्लासिक पनीर पिझ्झा ", price: 170, image: "menu card image/paneer pizza.jpeg"},
+      { name: "क्लासिक कॉर्न पिझ्झा ", price: 160, image: "menu card image/corn pizza.jpg"},
+      { name: "क्लासिक व्हेज पिझ्झा ", price: 150, image: "menu card image/veg pizza.jpg"},
       { name: "एक्सट्रा चिझ पनीर पिझ्झा ", price: 210, image: "menu card image/paneer pizza.jpeg"},
       { name: "एक्सट्रा चिझ कॉर्न पिझ्झा ", price: 200, image: "menu card image/corn pizza.jpg"},
-      { name: "एक्सट्रा चिझ व्हेज पिझ्झा ", price: 190, image: "menu card image/veg pizza.jpg"}
+      { name: "एक्सट्रा चिझ व्हेज पिझ्झा ", price: 190, image: "menu card image/veg pizza.jpg"},
+      { name: "तंदूरी पनीर पिझ्झा ", price: 170, image: "menu card image/paneer pizza.jpeg"},
+      { name: "तंदूरी कॉर्न पिझ्झा ", price: 160, image: "menu card image/corn pizza.jpg"},
+      { name: "तंदूरी व्हेज पिझ्झा ", price: 150, image: "menu card image/veg pizza.jpg"},
+      { name: "शेजवान पनीर पिझ्झा ", price: 170, image: "menu card image/paneer pizza.jpeg"},
+      { name: "शेजवान कॉर्न पिझ्झा ", price: 160, image: "menu card image/corn pizza.jpg"},
+      { name: "शेजवान व्हेज पिझ्झा ", price: 150, image: "menu card image/veg pizza.jpg"}
 
     ]
   },
@@ -94,9 +99,9 @@ const categories = [
     name: "रोल ",
   items: [
       { name: "व्हेज रोल ", price: 65, image: "menu card image/veg roll.jpg"},
-      { name: "चीझ व्हेज रोल ", price: 75, image: "menu card image/veg cheese roll.jpeg"},
+      { name: "चीझ व्हेज रोल ", price: 85, image: "menu card image/veg cheese roll.jpeg"},
       { name: "पनीर रोल ", price: 75, image: "menu card image/paneer roll.jpg"},
-      { name: "चीझ पनीर रोल ", price: 85, image: "menu card image/paneer roll.jpg"},
+      { name: "चीझ पनीर रोल ", price: 95, image: "menu card image/paneer roll.jpg"},
       { name: "कॉर्न रोल ", price: 85, image: "menu card image/corn roll.jpg"},
       { name: "चीझ कॉर्न रोल ", price: 105, image: "menu card image/corn roll.jpg"},
       { name: "चायनीज रोल ", price: 95, image: "menu card image/chinese roll.jpg"},
@@ -123,8 +128,8 @@ const categories = [
     items: [
       { name: "प्लेन टोर्नेडो  ", price: 65, image: "menu card image/peri peri tornado.jpeg"},
       { name: "पेरी पेरी टोर्नेडो ", price: 75, image: "menu card image/peri peri tornado.jpeg"},
-      { name: "चीझ टोर्नेडो ", price: 75, image: "menu card image/peri peri tornado.jpeg"},
-      { name: "चीझ पेरी पेरी टोर्नेडो ", price: 85, image: "menu card image/peri peri tornado.jpeg"},
+      { name: "प्लेन चीझ टोर्नेडो ", price: 85, image: "menu card image/peri peri tornado.jpeg"},
+      { name: "चीझ पेरी पेरी टोर्नेडो ", price: 95, image: "menu card image/peri peri tornado.jpeg"},
       { name: "कुरकुरे टोर्नेडो ", price: 105, image: "menu card image/peri peri tornado.jpeg"}
 
     ]
@@ -156,10 +161,7 @@ const categories = [
       { name: "पनीर चिल्ली", price: 115, image: "menu card image/paneer chilli.jpg"},
       { name: "मिक्स व्हेज क्रिस्पी ", price: 115, image: "menu card image/mix veg cripsy.jpg"},
       { name: "कॉकटेल ", price: 125, image: "menu card image/cocktail rice.jpg"},
-      { name: "अमेरिकन चॉप्सी ", price: 95, image: "menu card image/american-chopsuey.jpg"},
-      { name: "चायनीज  चॉप्सी ", price: 95, image: "menu card image/chinese chopsy.webp"},
-      { name: "सोया ६५", price: 95, image: "menu card image/soyabean chilli.jpeg"},
-      { name: "क्रिस्पी मांचुरियन थ्रेड ", price: 115, image: "menu card image/paneer thread.jpeg"},
+      { name: "सोया ६५", price: 115, image: "menu card image/soyabean chilli.jpeg"},
       { name: "क्रिस्पी पनीर  थ्रेड ", price: 125, image: "menu card image/paneer thread.jpeg"}
 
     ]
@@ -174,9 +176,7 @@ const categories = [
       { name: "मंचुरियन नूडल्स ", price: 95, image: "menu card image/manchurian noodles.jpg"},
       { name: "ट्रिपल नूडल्स ", price: 105, image: "menu card image/tripal noodles.jpg"},
       { name: "चिली गार्लिक नूडल्स ", price: 105, image: "menu card image/chilli garlic noodles.jpeg"},
-      { name: "मॅगी मसाला नूडल्स ", price: 105, image: "menu card image/maggi masala noodles.avif"},
-      { name: "चाऊमीन नूडल्स ", price: 105, image: "menu card image/chowmein noodles.jpeg"},
-      { name: "हॉंगकॉंग नूडल्स ", price: 105, image: "menu card image/hong kong noodles.jpg"}
+      { name: "शेजवान ट्रिपल नूडल्स ", price: 115, image: "menu card image/tripal noodles.jpg"}
 
     ]
   },
@@ -243,6 +243,7 @@ const categories = [
       { name: "चटपटा मसाला नाचोज ", price: 55, image: "menu card image/chatpata masala nachos.webp"},
       { name: "पेरी पेरी नाचोज", price: 65, image: "menu card image/chatpata masala nachos.webp"},
       { name: "चीज नाचोज ", price: 75, image: "menu card image/nachos.jpeg"},
+      { name: "चीज पेरी पेरी नाचोज ", price: 85, image: "menu card image/nachos.jpeg"},   
       { name: "चीज लोडेड नाचोज ", price: 105, image: "menu card image/nachos.jpeg"}
 
     ]
@@ -279,12 +280,11 @@ const categories = [
     items: [
       { name: "फ्राईड आलू टिक्की चाट ", price: 55, image: "menu card image/fried aalu tikki chat.jpg"},
       { name: "रगडा पॅटिस", price: 65, image: "menu card image/ragda patties.jpg"},
-      { name: "आलू चाट", price: 45, image: "menu card image/aalu chat.jpeg"},
-      { name: "भेळ", price: 45, image: "menu card image/bhel.jpeg"},
-      { name: "आलू पोंगा", price: 35, image: "menu card image/aalu ponga.jpg"},
-      { name: "शेव पुरी ", price: 35, image: "menu card image/sev-puri.jpg"},
-      { name: "दही पुरी", price: 35, image: "menu card image/dahi puri.jpg"},
-      { name: "S P D P", price: 35, image: "menu card image/s p d p.jpg"}
+      { name: "भेळ", price: 40, image: "menu card image/bhel.jpeg"},
+      { name: "आलू पोंगा", price: 30, image: "menu card image/aalu ponga.jpg"},
+      { name: "शेव पुरी ", price: 30, image: "menu card image/sev-puri.jpg"},
+      { name: "दही पुरी", price: 30, image: "menu card image/dahi puri.jpg"},
+      { name: "S P D P", price: 30, image: "menu card image/s p d p.jpg"}
 
     ]
   },
@@ -293,8 +293,13 @@ const categories = [
     id: "साऊथ इंडियन   ",
     name: "साऊथ इंडियन    ",
     items: [
+      { name: "मसाला  डोसा ", price: 55, image: "menu card image/sponge do.jpeg"},
       { name: "स्पंज डोसा ", price: 55, image: "menu card image/sponge do.jpeg"},
+      { name: "कटपीस डोसा ", price: 65, image: "menu card image/sponge do.jpeg"},
+      { name: "शेजवान डोसा ", price: 75, image: "menu card image/sponge do.jpeg"},   
       { name: "पावभाजी डोसा ", price: 85, image: "menu card image/pav bhaji dosa.jpeg"},
+      { name: "कॉर्न डोसा ", price: 95, image: "menu card image/pav bhaji dosa.jpeg"},
+      { name: "पनीर मसाला डोसा ", price: 105, image: "menu card image/pav bhaji dosa.jpeg"},   
       { name: "टोमॅटो उत्तपा ", price: 55, image: "menu card image/tomato utthapa.jpeg"},
       { name: "ओनियन उत्तपा", price: 55, image: "menu card image/onion utthapa.jpeg"},
       { name: "टोमॅटो ओनियन उत्तपा", price: 65, image: "menu card image/mix utthapa.jpeg"},
@@ -345,8 +350,8 @@ const categories = [
       { name: "आलू मटर भाजी ", price: 105, image: "menu card image/aalu matar bhaji.jpg"},
       { name: "दाल फ्राय", price: 125, image: "menu card image/dal fry.jpeg"},
       { name: "दाल तडका ", price: 135, image: "menu card image/dal tadaka.jpeg"},
-      { name: "फुलका ", price: 10, image: "menu card image/fhulka.jpeg"},
-      { name: "पुरी", price: 20, image: "menu card image/puri.jpeg"},
+      { name: "फुलका ", price: 12, image: "menu card image/fhulka.jpeg"},
+      { name: "पुरी", price: 25, image: "menu card image/puri.jpeg"},
       { name: "श्रीखंड ", price: 40, image: "menu card image/shikhand.jpeg"},
       { name: "मसाला पापड", price: 30, image: "menu card image/masala papad.jpeg"},
       { name: "रोस्टेड पापड ", price: 20, image: "menu card image/roasted papad.jpeg"}
