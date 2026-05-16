@@ -280,11 +280,11 @@ const categories = [
     items: [
       { name: "फ्राईड आलू टिक्की चाट ", price: 55, image: "menu card image/fried aalu tikki chat.jpg"},
       { name: "रगडा पॅटिस", price: 65, image: "menu card image/ragda patties.jpg"},
-      { name: "भेळ", price: 40, image: "menu card image/bhel.jpeg"},
-      { name: "आलू पोंगा", price: 30, image: "menu card image/aalu ponga.jpg"},
-      { name: "शेव पुरी ", price: 30, image: "menu card image/sev-puri.jpg"},
-      { name: "दही पुरी", price: 30, image: "menu card image/dahi puri.jpg"},
-      { name: "S P D P", price: 30, image: "menu card image/s p d p.jpg"}
+      { name: "भेळ", price: 45, image: "menu card image/bhel.jpeg"},
+      { name: "आलू पोंगा", price: 35, image: "menu card image/aalu ponga.jpg"},
+      { name: "शेव पुरी ", price: 35, image: "menu card image/sev-puri.jpg"},
+      { name: "दही पुरी", price: 35, image: "menu card image/dahi puri.jpg"},
+      { name: "S P D P", price: 35, image: "menu card image/s p d p.jpg"}
 
     ]
   },
