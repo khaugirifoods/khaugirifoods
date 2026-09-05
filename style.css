@@ -105,6 +105,57 @@ body {
     animation: glowText 2s infinite alternate;
   }
 
+  /* Mini header (visible when collapsed) */
+  .mini-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #006400, #00a859);
+    z-index: 1060;
+    padding: 6px 12px;
+  }
+
+  /* When collapsed: hide full navbar and carousel, show mini header and fix category chips */
+  body.collapsed .custom-navbar,
+  body.collapsed #offerCarousel {
+    display: none !important;
+  }
+
+  body.collapsed #miniHeader {
+    display: flex !important;
+  }
+
+  /* Keep the fixed order button behind the modal while reviewing an order */
+  body.modal-open #miniHeader {
+    display: none !important;
+  }
+
+  body.modal-open #backToTop {
+    display: none !important;
+  }
+
+  body.collapsed #categoryChips {
+    position: fixed;
+    top: 56px; /* below mini header */
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    background: rgba(255,255,255,0.95);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    overflow-y: auto;
+  }
+
+  /* ensure menu content isn't hidden under fixed chips when collapsed */
+  body.collapsed #menuContainer {
+    padding-top: 28vh; /* default reserve space; JS will adjust dynamically */
+  }
+
   /* Text Glow Animation */
   @keyframes glowText {
     from { text-shadow: 0 0 5px #fff; }
@@ -168,7 +219,99 @@ body {
   }
 
   #searchInput {
-  width: 100%;       /* full width */
-  margin-bottom: 1rem;
-  padding: 0.5rem;   /* optional padding */
+    width: 100%;       /* full width */
+    margin-bottom: 1rem;
+    padding: 0.5rem;   /* optional padding */
+  }
+
+  /* Category chips styling: compact, scrollable, limited height (~25% viewport)
+     Keeps the chips visible but prevents them from pushing content too far down. */
+  #categoryChips {
+    max-height: 25vh; /* approx 20-30% of viewport height */
+    overflow-y: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .category-chips {
+    gap: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+  }
+  .chip {
+    border-radius: 999px;
+    padding: 4px 8px;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  /* On small screens make chips slightly smaller and reduce card spacing */
+  @media (max-width: 600px) {
+    #categoryChips { max-height: 22vh; }
+    .chip {
+      padding: 3px 6px;
+      font-size: 12px;
+    }
+    .food-card {
+      min-width: 120px;
+      padding: 6px;
+    }
+    .food-card img {
+      height: 70px;
+    }
+  }
+
+/* Ensure category headings are visible when scrolled to - use scroll-margin-top */
+#menuContainer h4 {
+  scroll-margin-top: var(--header-offset, 120px);
+}
+
+/* Back-to-top button */
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  min-height: 44px;
+  padding: 8px 14px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #006400, #00a859);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  box-shadow: 0 5px 16px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 2000;
+  transition: opacity 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+  opacity: 0;
+  transform: translateY(8px);
+}
+.back-to-top small {
+  font-size: 13px;
+  line-height: 1;
+}
+.back-to-top:hover {
+  box-shadow: 0 7px 20px rgba(0,0,0,0.38);
+  transform: translateY(-2px);
+}
+.back-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.back-to-top:active { transform: scale(0.98); }
+
+@media (max-width: 600px) {
+  .back-to-top {
+    right: 12px;
+    bottom: 12px;
+    min-height: 40px;
+    padding: 7px 11px;
+  }
+  .back-to-top small { font-size: 12px; }
 }

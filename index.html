@@ -42,6 +42,11 @@
   </button>
 </nav>
 
+<!-- Mini header shown when collapsed: only order button -->
+<div id="miniHeader" class="mini-header d-none">
+  <button class="btn order-btn" id="miniViewCartBtn">🍴 View & Place Order</button>
+</div>
+
 
 
 <!-- Offer Carousel -->
@@ -59,10 +64,8 @@
   </div>
 </div>
 
-<div class="container my-4">
-  <input type="text" id="searchInput" class="form-control" 
-         placeholder="Search menu items..." />
-</div>
+<!-- Category chips (dynamically filled) -->
+<div class="container my-3" id="categoryChips"></div>
 <!-- Menu -->
 
 <div class="container my-4" id="menuContainer"></div>
@@ -120,6 +123,12 @@
 </div>
 
 
+
+<!-- Back to top button -->
+<button id="backToTop" class="back-to-top d-none" aria-label="Go to top" title="Go to top">
+  <span aria-hidden="true">▲</span>
+  <small>Go to top</small>
+</button>
 
 <!-- Scripts -->
 

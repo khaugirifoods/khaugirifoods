@@ -369,10 +369,12 @@ function renderMenu() {
   categories.forEach(cat => {
     const row = document.createElement("div");
     row.className = "mb-4";
+    // add a safe id for category section so chips can scroll to it
+    row.id = makeSlug(cat.id) + '-section';
 
     row.innerHTML = `
       <h4>${cat.name}</h4>
-      <div class="d-flex overflow-auto" id="${cat.id}-carousel">
+      <div class="d-flex overflow-auto" id="${makeSlug(cat.id)}-carousel">
         ${cat.items.map((item, i) => `
           <div class="food-card me-3 p-2 border rounded text-center" style="width: 150px;">
             <img src="${item.image}" alt="${item.name}" style="width: 100%; height: 100px; object-fit: cover;" />
@@ -389,6 +391,39 @@ function renderMenu() {
 
     container.appendChild(row);
   });
+}
+
+// create a safe slug from category id/title
+function makeSlug(text) {
+  return String(text)
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    // keep Unicode letters and numbers from all languages, plus dashes/underscores
+    .replace(/[^(\p{L}\p{N}_\-)]+/gu, '')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+// Render category chips/buttons below the carousel
+function renderCategoryChips() {
+  const container = document.getElementById('categoryChips');
+  if (!container) return;
+  container.innerHTML = '';
+
+  const chipsRow = document.createElement('div');
+  chipsRow.className = 'category-chips d-flex flex-wrap align-items-center';
+
+  categories.forEach(cat => {
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'chip btn btn-sm btn-outline-secondary me-2 mb-2';
+    chip.textContent = cat.name;
+    const targetId = makeSlug(cat.id) + '-section';
+    chip.addEventListener('click', () => scrollToSection(targetId));
+    chipsRow.appendChild(chip);
+  });
+
+  container.appendChild(chipsRow);
 }
 
 function increase(id) {
@@ -466,47 +501,132 @@ document.getElementById("whatsappBtn").addEventListener("click", function (e) {
   window.open(url, "_blank");
 });
 
-window.onload = renderMenu;
+window.onload = function () {
+  renderMenu();
+  renderCategoryChips();
+  // attach search listener only if the search input exists (we hid it)
+  const searchInput = document.getElementById('searchInput');
+  if (searchInput) searchInput.addEventListener('input', filterMenu);
+};
 
-// Attach search input listener after menu has been rendered
-const searchInput = document.getElementById('searchInput');
-searchInput.addEventListener('input', filterMenu);
+// Update CSS var controlling header offset (navbar + chips + safety)
+function updateHeaderOffset() {
+  const navbar = document.querySelector('.custom-navbar');
+  const chips = document.getElementById('categoryChips');
+  const navbarHeight = navbar ? navbar.offsetHeight : 0;
+  const chipsHeight = chips ? chips.offsetHeight : 0;
+  const offset = navbarHeight + chipsHeight + 20; // safety buffer
+  document.documentElement.style.setProperty('--header-offset', offset + 'px');
+}
 
-function filterMenu() {
-  const query = searchInput.value.trim().toLowerCase();
-  const container = document.getElementById("menuContainer");
+window.addEventListener('resize', updateHeaderOffset);
 
-  // If search is empty, restore full menu:
-  if (!query) {
-    renderMenu();
-    return;
-  }
+// Collapse navbar and carousel when scrolling past carousel; show mini header and fix chips
+(function setupCollapseBehavior() {
+  const carousel = document.getElementById('offerCarousel');
+  const miniHeader = document.getElementById('miniHeader');
+  const chips = document.getElementById('categoryChips');
+  const menuContainer = document.getElementById('menuContainer');
+  const miniBtn = document.getElementById('miniViewCartBtn');
+  let collapsePoint = carousel ? carousel.offsetTop + carousel.offsetHeight - 50 : 150;
 
-  // Build filtered item cards:
-  let filteredHTML = '';
-  categories.forEach(cat => {
-    cat.items.forEach((item, i) => {
-      if (item.name.toLowerCase().includes(query)) {
-        const itemId = cat.id + i;
-        filteredHTML += `
-          <div class="food-card me-3 p-2 border rounded text-center" style="width: 150px;">
-            <img src="${item.image}" alt="${item.name}" style="width:100%; height:100px; object-fit:cover;" />
-            <p><strong>${item.name}</strong><br>₹${item.price}</p>
-            <div class="quantity">
-              <button onclick="decrease('${itemId}')">-</button>
-              <span id="${itemId}">${cart[itemId] || 0}</span>
-              <button onclick="increase('${itemId}')">+</button>
-            </div>
-          </div>`;
-      }
-    });
+  if (miniBtn) miniBtn.addEventListener('click', () => {
+    const modal = new bootstrap.Modal(document.getElementById('cartModal'));
+    modal.show();
   });
 
-  // Replace menu with filtered results:
-  if (filteredHTML) {
-    container.innerHTML = `<div class="d-flex flex-wrap">${filteredHTML}</div>`;
-  } else {
-    container.innerHTML = "<p>No items match your search.</p>";
+  function updateCollapse() {
+    if (window.pageYOffset > collapsePoint) {
+      if (!document.body.classList.contains('collapsed')) {
+        document.body.classList.add('collapsed');
+        // adjust menu container padding to chips height + mini header
+        if (chips && menuContainer) {
+          const chipsH = chips.offsetHeight;
+          const miniH = miniHeader ? miniHeader.offsetHeight : 56;
+          menuContainer.style.paddingTop = (chipsH + miniH + 20) + 'px';
+        }
+        updateHeaderOffset();
+      }
+    } else {
+      if (document.body.classList.contains('collapsed')) {
+        document.body.classList.remove('collapsed');
+        if (menuContainer) menuContainer.style.paddingTop = '';
+        updateHeaderOffset();
+      }
+    }
   }
+
+  window.addEventListener('scroll', updateCollapse);
+  window.addEventListener('resize', () => {
+    if (!document.body.classList.contains('collapsed') && carousel) {
+      collapsePoint = carousel.offsetTop + carousel.offsetHeight - 50;
+    }
+  });
+  // run once
+  setTimeout(updateCollapse, 300);
+})();
+
+// Back-to-top button behavior
+(function setupBackToTop() {
+  const back = document.getElementById('backToTop');
+  if (!back) return;
+
+  function update() {
+    if (window.pageYOffset > 300) {
+      back.classList.remove('d-none');
+      back.classList.add('show');
+    } else {
+      back.classList.add('d-none');
+      back.classList.remove('show');
+    }
+  }
+
+  back.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // After smooth scroll reaches top, ensure collapsed state is removed
+    const menuContainer = document.getElementById('menuContainer');
+    const cancelAfter = 2500; // ms fallback
+    const start = Date.now();
+    const iv = setInterval(() => {
+      if (window.pageYOffset <= 10 || Date.now() - start > cancelAfter) {
+        if (document.body.classList.contains('collapsed')) {
+          document.body.classList.remove('collapsed');
+        }
+        if (menuContainer) menuContainer.style.paddingTop = '';
+        clearInterval(iv);
+      }
+    }, 100);
+  });
+
+  window.addEventListener('scroll', update);
+  // initial state
+  setTimeout(update, 200);
+})();
+
+// Scroll to a section with offset for fixed navbar
+function scrollToSection(targetId) {
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  // Compute exact scroll position so heading appears below any fixed elements
+  const navbar = document.querySelector('.custom-navbar');
+  const chips = document.getElementById('categoryChips');
+  const navbarVisible = navbar && getComputedStyle(navbar).display !== 'none';
+  const navbarHeight = navbarVisible ? navbar.offsetHeight : 0;
+
+  let chipsHeight = 0;
+  if (chips) {
+    const cs = getComputedStyle(chips);
+    // chips are effectively fixed when body.collapsed or CSS position fixed
+    if (document.body.classList.contains('collapsed') || cs.position === 'fixed') {
+      chipsHeight = chips.offsetHeight;
+    }
+  }
+
+  const extraGap = 8; // small safety gap
+  const rect = el.getBoundingClientRect();
+  const absoluteTop = rect.top + window.pageYOffset;
+  const offset = navbarHeight + chipsHeight + extraGap;
+  const targetY = Math.max(0, absoluteTop - offset);
+  window.scrollTo({ top: targetY, behavior: 'smooth' });
 }
 
