@@ -3,7 +3,6 @@ const categories = [
     id: "आईस्क्रीम कुल्फी  ",
     name: "आईस्क्रीम कुल्फी    ",
     items: [
-      { name: "कुल्फी", price: 12, image: "menu card image/Kulfi.png"},
       { name: "जीरा सोडा", price: 15, image: "menu card image/Jeera_Soda.png"},
       { name: "बटरस्कॉच", price: 30, image: "menu card image/butter ice.jpg"},
       { name: "चॉकलेट ", price: 30, image: "menu card image/chocolate ice.webp"},
@@ -16,7 +15,6 @@ const categories = [
     id: "शेक   ",
     name: "शेक     ",
     items: [
-      { name: "केसर-पिस्ता शेक", price: 65, image: "menu card image/kesar pista shake.webp"},
       { name: "पायनॅपल शेक ", price: 65, image: "menu card image/pineapple shake.jpg"},
       { name: "कोल्ड कॉफी ", price: 45, image: "menu card image/cold coffee.jpeg"},
       { name: "कोल्ड कॉफी आईस्क्रीम", price: 65, image: "menu card image/cold coffee ice.jpeg"},
@@ -154,7 +152,6 @@ const categories = [
     name: "चायनीज स्नॅक्स ",
     items: [
       { name: "मंचुरियन ", price: 85, image: "menu card image/manchurian.webp"},
-      { name: "व्हेज लॉलीपॉप ", price: 95, image: "menu card image/lolipop.jpeg"},
       { name: "पनीर पकोडा ", price: 105, image: "menu card image/paneer pakoda.webp"},
       { name: "चायनीज भेळ ", price: 105, image: "menu card image/chinese bhel.jpg"},
       { name: "सोयाबीन  चिल्ली  ", price: 105, image: "menu card image/soyabean chilli.jpeg"},
