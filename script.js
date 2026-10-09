@@ -21,7 +21,9 @@ const categories = [
       { name: "कोल्ड कॉफी चोको क्रॅश", price: 65, image: "menu card image/cold coffee choco.jpeg"},
       { name: "कोल्ड कॉफी आईस्क्रीम + क्रॅश", price: 75, image: "menu card image/cold coffee ice choco.jpeg"},
       { name: "चॉकलेट शेक ", price: 65, image: "menu card image/choco shake.jpeg"},
-      { name: "चॉकलेट शेक चोको क्रॅश ", price: 85, image: "menu card image/choco shake.jpeg"},
+      { name: "चॉकलेट आईस्क्रीम ", price: 85, image: "menu card image/choco shake.jpeg"},
+      { name: "चॉकलेट शेक चोको क्रॅश ", price: 85, image: "menu card image/choco shake.jpeg"},   
+      { name: "चॉकलेट शेक आईस्क्रीम + क्रॅश ", price: 95, image: "menu card image/choco shake.jpeg"},
       { name: "व्हॅनिला शेक ", price: 65, image: "menu card image/vaniila shake.jpg"},
       { name: "ओरियो फ्रिक शेक", price: 85, image: "menu card image/freak shake.jpg"},
       { name: "ओरियो फ्रिक शेक आईस्क्रीम ", price: 105, image: "menu card image/oreo freak shake.jpg"},
@@ -66,15 +68,29 @@ const categories = [
       { name: "क्लासिक पनीर पिझ्झा ", price: 170, image: "menu card image/paneer pizza.jpeg"},
       { name: "क्लासिक कॉर्न पिझ्झा ", price: 160, image: "menu card image/corn pizza.jpg"},
       { name: "क्लासिक व्हेज पिझ्झा ", price: 150, image: "menu card image/veg pizza.jpg"},
-      { name: "एक्सट्रा चिझ पनीर पिझ्झा ", price: 210, image: "menu card image/paneer pizza.jpeg"},
-      { name: "एक्सट्रा चिझ कॉर्न पिझ्झा ", price: 200, image: "menu card image/corn pizza.jpg"},
-      { name: "एक्सट्रा चिझ व्हेज पिझ्झा ", price: 190, image: "menu card image/veg pizza.jpg"},
       { name: "तंदूरी पनीर पिझ्झा ", price: 170, image: "menu card image/paneer pizza.jpeg"},
       { name: "तंदूरी कॉर्न पिझ्झा ", price: 160, image: "menu card image/corn pizza.jpg"},
       { name: "तंदूरी व्हेज पिझ्झा ", price: 150, image: "menu card image/veg pizza.jpg"},
       { name: "शेजवान पनीर पिझ्झा ", price: 170, image: "menu card image/paneer pizza.jpeg"},
       { name: "शेजवान कॉर्न पिझ्झा ", price: 160, image: "menu card image/corn pizza.jpg"},
       { name: "शेजवान व्हेज पिझ्झा ", price: 150, image: "menu card image/veg pizza.jpg"}
+
+    ]
+  },
+
+           {
+    id: "चीज ओव्हरलोड पिझ्झा",
+    name: "चीज ओव्हरलोड पिझ्झा",
+    items: [
+      { name: "चीज ओव्हरलोड क्लासिक पनीर पिझ्झा ", price: 210, image: "menu card image/paneer pizza.jpeg"},
+      { name: "चीज ओव्हरलोड क्लासिक कॉर्न पिझ्झा ", price: 200, image: "menu card image/corn pizza.jpg"},
+      { name: "चीज ओव्हरलोड क्लासिक व्हेज पिझ्झा ", price: 190, image: "menu card image/veg pizza.jpg"},
+      { name: "चीज ओव्हरलोड तंदूरी पनीर पिझ्झा ", price: 210, image: "menu card image/paneer pizza.jpeg"},
+      { name: "चीज ओव्हरलोड तंदूरी कॉर्न पिझ्झा ", price: 200, image: "menu card image/corn pizza.jpg"},
+      { name: "चीज ओव्हरलोड तंदूरी व्हेज पिझ्झा ", price: 190, image: "menu card image/veg pizza.jpg"},
+      { name: "चीज ओव्हरलोड शेजवान पनीर पिझ्झा ", price: 210, image: "menu card image/paneer pizza.jpeg"},
+      { name: "चीज ओव्हरलोड शेजवान कॉर्न पिझ्झा ", price: 200, image: "menu card image/corn pizza.jpg"},
+      { name: "चीज ओव्हरलोड शेजवान व्हेज पिझ्झा ", price: 190, image: "menu card image/veg pizza.jpg"}
 
     ]
   },
@@ -222,13 +238,13 @@ const categories = [
   },
 
   {
-    id: "चीझ बर्स्ट सँडविच  ",
-    name: "चीझ बर्स्ट सँडविच   ",
+    id: "लोडेड चीज सँडविच (मोझरेला चीज आत) ",
+    name: "लोडेड चीज सँडविच (मोझरेला चीज आत)",
     items: [
-      { name: "चीझ बर्स्ट व्हेज सँडविच ", price: 105, image: "menu card image/cheese burst sandwich.jpg"},
-      { name: "चीझ बर्स्ट कॉर्न सँडविच ", price: 105, image: "menu card image/cheese burst sandwich.jpg"},
-      { name: "चीझ बर्स्ट आलू सँडविच ", price: 105, image: "menu card image/cheese burst sandwich.jpg"},
-      { name: "चीझ बर्स्ट पनीर सँडविच ", price: 125, image: "menu card image/cheese burst sandwich.jpg"}
+      { name: "लोडेड चीज व्हेज सँडविच ", price: 105, image: "menu card image/cheese burst sandwich.jpg"},
+      { name: "लोडेड चीज कॉर्न सँडविच ", price: 105, image: "menu card image/cheese burst sandwich.jpg"},
+      { name: "लोडेड चीज आलू सँडविच ", price: 105, image: "menu card image/cheese burst sandwich.jpg"},
+      { name: "लोडेड चीज पनीर सँडविच ", price: 125, image: "menu card image/cheese burst sandwich.jpg"}
 
     ]
   },
