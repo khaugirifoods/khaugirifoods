@@ -21,7 +21,7 @@ const categories = [
       { name: "कोल्ड कॉफी चोको क्रॅश", price: 65, image: "menu card image/cold coffee choco.jpeg"},
       { name: "कोल्ड कॉफी आईस्क्रीम + क्रॅश", price: 75, image: "menu card image/cold coffee ice choco.jpeg"},
       { name: "चॉकलेट शेक ", price: 65, image: "menu card image/choco shake.jpeg"},
-      { name: "चॉकलेट आईस्क्रीम ", price: 85, image: "menu card image/choco shake.jpeg"},
+      { name: "चॉकलेट शेक आईस्क्रीम ", price: 85, image: "menu card image/choco shake.jpeg"},
       { name: "चॉकलेट शेक चोको क्रॅश ", price: 85, image: "menu card image/choco shake.jpeg"},   
       { name: "चॉकलेट शेक आईस्क्रीम + क्रॅश ", price: 95, image: "menu card image/choco shake.jpeg"},
       { name: "व्हॅनिला शेक ", price: 65, image: "menu card image/vaniila shake.jpg"},
