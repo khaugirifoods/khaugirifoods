@@ -1,4 +1,24 @@
 const categories = [
+      {
+    id: "बर्गर",
+    name: "बर्गर",
+    items: [
+      { name: "क्लासिक व्हेज बर्गर ", price: 85, image: "menu card image/vegburger.png"},
+      { name: "क्लासिक कॉर्न बर्गर ", price: 110, image: "menu card image/cornburger.png"},
+      { name: "क्लासिक पनीर बर्गर ", price: 110, image: "menu card image/paneerburger.png"},
+      { name: "क्लासिक डबल प्याटि बर्गर ", price: 130, image: "menu card image/doubleburger.png"},
+      { name: "शेजवान व्हेज बर्गर ", price: 90, image: "menu card image/vegburger.png"},
+      { name: "शेजवान कॉर्न बर्गर ", price: 115, image: "menu card image/cornburger.png"},
+      { name: "शेजवान पनीर बर्गर ", price: 115, image: "menu card image/paneerburger.png"},
+      { name: "शेजवान डबल प्याटि बर्गर ", price: 135, image: "menu card image/doubleburger.png"},
+      { name: "तंदूरी व्हेज बर्गर ", price: 95, image: "menu card image/vegburger.png"},
+      { name: "तंदूरी कॉर्न बर्गर ", price: 120, image: "menu card image/cornburger.png"},
+      { name: "तंदूरी पनीर बर्गर ", price: 120, image: "menu card image/paneerburger.png"},
+      { name: "तंदूरी डबल प्याटि बर्गर ", price: 140, image: "menu card image/doubleburger.png"}
+
+    ]
+  },
+     
      {
     id: "आईस्क्रीम कुल्फी  ",
     name: "आईस्क्रीम कुल्फी    ",
